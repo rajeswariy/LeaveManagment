@@ -1,0 +1,37 @@
+<html>
+<head>
+	  <title>Leave Managment System</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+	  <script src="/js/emp.js"></script>
+<!-- 	  <script src="/js/angular-route.min.js"></script> -->
+	  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+	  
+</head>
+<body ng-app="app" ng-controller="logincontroller">
+<form>
+
+   <div >
+          <label for="name">Name</label>
+           <input name="name" ng-model="name"  type="text">
+           </input>
+      </div>
+
+	 <div >
+          <label for="pwd">pwd</label>
+           <input  name="pwd" id="pwd" ng-model="pwd" type="text">
+           </input>
+      </div>
+      
+      
+<div >
+<button class="btn btn-primary" ng-click="login()">EmpLeavePage</button> 
+<!-- <input type="button" value="{{$scope.btnName}}" ng-click="addCustomer()"/> -->
+
+</div>
+
+</form>
+</body>
+
+</html>

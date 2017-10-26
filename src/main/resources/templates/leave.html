@@ -1,0 +1,26 @@
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+	  <script src="/js/emp.js"></script>
+<title>Leave Page</title>
+
+</head>
+<body ng-app="app" ng-controller="logincontroller">
+	<h1> Welcome to Leavev Management</h1>
+	{{$scope.name}}
+	<form>
+	
+	<input type="date" ng-model="fromdate" >fromdate</input><br/>
+	<input type="date" ng-model="todate">todate</input><br/>
+	<select>
+	<option>feeling not well</option>
+	<option>some urgrncy</option>
+	</select><br/>
+	<button class="btn btn-primary" ng-click="leave()">LeaveRequest</button> 
+	
+	
+	</form>
+	
+	
+</body>
+</html>
